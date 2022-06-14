@@ -1,0 +1,8 @@
+[servers]
+web_server_1 ansible_host=172.31.18.47 ansible_ssh_private_key_file=~/virginia.pem ansible_user=ec2-user
+web_server_2 ansible_host=172.31.91.53 ansible_ssh_private_key_file=~/virginia.pem ansible_user=ubuntu
+instance_image ansible_host=172.31.91.34 ansible_ssh_private_key_file=~/virginia.pem ansible_user=ubuntu
+
+[appserver]
+db_server ansible_host=172.31.29.99 ansible_ssh_private_key_file=~/virginia.pem ansible_user=ec2-user
+web_server ansible_host=172.31.23.70 ansible_ssh_private_key_file=~/virginia.pem ansible_user=ec2-user
